@@ -59,7 +59,7 @@ function clickMine(i, j) {
         $("#" + i + "_" + j).addClass("active");
         timer = false;
         showBombs();
-        alert("BOOM !");
+        alert("BOOM YOU LOOSE!");
         //init();
     } else {
         $("#" + i + "_" + j).addClass("active");
@@ -127,7 +127,7 @@ function checkVictory() {
             }
             $("#" + i + "_" + j).attr('onclick', 'init()');
         }
-        alert("WELL DONE!");
+        alert("YOU WIN!");
         toDiscover = -1;
     }
 }
